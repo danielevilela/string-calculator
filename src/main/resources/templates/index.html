@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>String Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <h1>String calculator</h1>
+    <form action="#" th:action="@{/add}" th:object="${word}" method="post">
+        <p>String: <input type="text" th:field="*{value}" /></p>
+        <p><input type="submit" value="Submit" /> </p>
+    </form>
+</div>
+
+
+
+<h1 style="color:red" th:text="${exception}"></h1>
+
+
+</body>
+</html>
